@@ -63,6 +63,18 @@ h3 {
     top: 1rem;
 }
 
+@keyframes hero-fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .section-heading {
     margin-bottom: 2rem;
 }
@@ -234,9 +246,10 @@ button:focus-visible {
     flex-direction: column;
     gap: 20px;
     width: 100%;
-
     text-align: center;
     color: #fff;
+
+    animation: hero-fade-in 1s ease-out;
 }
 
 .hero-text h1 {
