@@ -279,3 +279,45 @@ button:focus-visible {
 .hero-text .btn {
     align-self: center;
 }
+
+/* ==========================
+   Welcome Section
+========================== */
+
+.section-welcome {
+    padding: 60px 0;
+}
+
+.section-welcome .section-heading {
+    margin-bottom: 10px;
+}
+
+.section-welcome .section-tagline {
+    margin-bottom: 8px;
+}
+
+.section-welcome h2 {
+    line-height: 1.15;
+}
+
+.quick-stack-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+    row-gap: 18px;
+}
+
+.quick-stack-images img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.quick-stack-images img:first-child {
+    grid-column: 1 / -1;
+    height: 388px;
+}
+
+.quick-stack-images img:not(:first-child) {
+    height: 160px;
+}
