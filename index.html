@@ -6,12 +6,11 @@
 
     <title>My Coffee House</title>
 
-    <!-- Google Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -22,7 +21,7 @@
         <div class="container header-container">
             <a class="site-logo" href="index.html" aria-current="page">
                 <img src="images/my-coffee-shop-logo.svg" alt="My Coffee House">
-            </a>
+            </a> 
             <nav class="site-nav" aria-label="Primary navigation">
                 <ul class="nav-menu">
                     <li class="nav-item">
@@ -49,8 +48,13 @@
 
     <main id="main-content">    
         <section class="hero-section">
-            <img class="hero-image" src="images/hero-background.jpg"
-                
+            <img class="hero-image" src="images/hero-960.webp"
+                srcset="
+                    images/hero-480.webp 480w,
+                    images/hero-960.webp 960w,
+                    images/hero-1440.webp 1440w
+                "
+                sizes="100vw"
                 alt=""
             >
 
@@ -102,8 +106,8 @@
                     <article class="offer-card">
                         <img src="images/local-baked-goods.svg" alt="">
                         <h3>Local Baked Goods</h3>
-                        <p> We use local products to bake our goods and bring in a
-                            variety of treats from local bakers within our community.
+                        <p>We use local products to bake our goods and bring in a
+                           variety of treats from local bakers within our community.
                         </p>
                     </article>
 
@@ -127,14 +131,14 @@
                             <p class="section-tagline">Our Menu</p>
                             <h2>Explore What We Have to Offer You</h2>
                         </div>
-                        <a class="btn btn-white" href="#">Explore Our Menu</a>
+                        <a class="btn btn-white" href="#menu">Explore Our Menu</a>
                     </div>
                     <div class="locations" id="locations">
                         <div class="section-heading">
                             <p class="section-tagline">Locations</p>
                             <h2>Find Your Nearest Coffee Shop</h2>
                         </div>
-                        <a class="btn btn-outline" href="#">View Locations</a>
+                        <a class="btn btn-outline" href="#locations">View Locations</a>
                     </div>
                 </div>
             </div>
@@ -167,7 +171,7 @@
                             from those seeking a cozy workspace.
                         </p>
 
-                        <a class="btn btn-black" href="#">Learn More</a>
+                        <a class="btn btn-black" href="#about-us">Learn More</a>
                     </div>
                 </div>
             </div>
